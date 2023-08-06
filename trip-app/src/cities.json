@@ -1,0 +1,139 @@
+[
+  {
+    "city": "Tokyo",
+    "image": "trip-app/src/assets/cities-images/tokyo.jpeg"
+  },
+  {
+    "city": "Delhi",
+    "image": "trip-app/src/assets/cities-images/delhi.jpg"
+  },
+  {
+    "city": "Shanghai",
+    "image": "trip-app/src/assets/cities-images/Shanghai.webp"
+  },
+  {
+    "city": "São Paulo",
+    "image": "trip-app/src/assets/cities-images/sao-paolo.jpeg"
+  },
+  {
+    "city": "Mumbai",
+    "image": "trip-app/src/assets/cities-images/mumbai.jpeg"
+  },
+  {
+    "city": "London",
+    "image": "trip-app/src/assets/cities-images/london.jpeg"
+  },
+  {
+    "city": "Berlin",
+    "image": "trip-app/src/assets/cities-images/berlin.jpegg"
+  },
+  {
+    "city": "Paris",
+    "image": "trip-app/src/assets/cities-images/paris.jpeg"
+  },
+  {
+    "city": "Rome",
+    "image": "trip-app/src/assets/cities-images/rome.webp"
+  },
+  {
+    "city": "Madrid",
+    "image": "trip-app/src/assets/cities-images/madrid.jpeg"
+  },
+  {
+    "city": "Barcelona",
+    "image": "trip-app/src/assets/cities-images/Barcelona.jpg"
+  },
+  {
+    "city": "Vienna",
+    "image": "trip-app/src/assets/cities-images/vienna.jpeg"
+  },
+  {
+    "city": "Munich",
+    "image": "trip-app/src/assets/cities-images/minuch.webp"
+  },
+  {
+    "city": "Hamburg",
+    "image": "trip-app/src/assets/cities-images/hamburg.webp"
+  },
+  {
+    "city": "Milan",
+    "image": "trip-app/src/assets/cities-images/milano.jpeg"
+  },
+  {
+    "city": "Amsterdam",
+    "image": "trip-app/src/assets/cities-images/amsterdam.jpeg"
+  },
+  {
+    "city": "Brussels",
+    "image": "trip-app/src/assets/cities-images/brussels.jpeg"
+  },
+  {
+    "city": "Stockholm",
+    "image": "trip-app/src/assets/cities-images/Stockholm-1024x682.jpg"
+  },
+  {
+    "city": "Prague",
+    "image": "trip-app/src/assets/cities-images/prague.jpeg"
+  },
+  {
+    "city": "Lisbon",
+    "image": "trip-app/src/assets/cities-images/lisbon.webp"
+  },
+  {
+    "city": "Dublin",
+    "image": "trip-app/src/assets/cities-images/dublin.webp"
+  },
+  {
+    "city": "Zurich",
+    "image": "trip-app/src/assets/cities-images/zurich.jpeg"
+  },
+  {
+    "city": "Warsaw",
+    "image": "trip-app/src/assets/cities-images/warsaw.jpeg"
+  },
+  {
+    "city": "Budapest",
+    "image": "trip-app/src/assets/cities-images/budapest.jpeg"
+  },
+  {
+    "city": "Copenhagen",
+    "image": "https://example.com/copenhagen.jpg"
+  },
+  {
+    "city": "Oslo",
+    "image": "https://example.com/oslo.jpg"
+  },
+  {
+    "city": "Helsinki",
+    "image": "https://example.com/helsinki.jpg"
+  },
+  {
+    "city": "Athens",
+    "image": "https://example.com/athens.jpg"
+  },
+  {
+    "city": "Edinburgh",
+    "image": "https://example.com/edinburgh.jpg"
+  },
+  {
+    "city": "Istanbul",
+    "image": "https://example.com/istanbul.jpg"
+  },
+  {
+    "city": "Kyiv",
+    "image": "https://example.com/kyiv.jpg"
+  },
+  {
+    "city": "Bucharest",
+    "image": "https://example.com/bucharest.jpg"
+  },
+  {
+    "city": "Sofia",
+    "image": "https://example.com/sofia.jpg"
+  },
+  {
+    "city": "Zagreb",
+    "image": "https://example.com/zagreb.jpg"
+  }
+]
+ 

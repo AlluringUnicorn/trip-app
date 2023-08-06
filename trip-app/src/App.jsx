@@ -1,35 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import TripList from "./components/TripList";
+import TripDetails from "./components/TripDetails";
+import TripModal from "./components/TripModal";
+import css from './App.module.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [trips, setTrips] = useState([
+    {
+      id: 1,
+      city: "London",
+      image: "src/assets/cities-images/london.jpeg",
+      startDate: "2023-08-14",
+      endDate: "2023-08-21",
+    },
+    {
+      id: 2,
+      city: "Barcelona",
+      image: "src/assets/cities-images/Barcelona.jpg",
+      startDate: "2023-09-25",
+      endDate: "2023-09-30",
+    },
+  ]); // State to hold the list of trips
+  const [selectedTrip, setSelectedTrip] = useState(null); // State to hold the selected trip
+  const [searchQuery, setSearchQuery] = useState(""); // State to hold the search query
+
+  // Function to add a new trip to the list
+  const addTrip = (trip) => {
+    setTrips([...trips, trip]);
+  };
+
+  // Function to select a trip from the list
+  const selectTrip = (trip) => {
+    setSelectedTrip(trip);
+  };
+
+  // Function to handle the search query
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  // Filter trips based on the search query
+  const filteredTrips = trips.filter((trip) =>
+    trip.city.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+      <h1>Weather Forecast</h1>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search your trip"
+          value={searchQuery}
+          onChange={handleSearch}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className={css.trip_list}>
+        <TripList trips={filteredTrips} selectTrip={selectTrip} />
+        <TripModal addTrip={addTrip} />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <h2>Week</h2>
 
-export default App
+      {selectedTrip ? (
+        <TripDetails trip={selectedTrip} />
+      ) : (
+        <p>Select a trip from the list to view weather details.</p>
+      )}
+    </div>
+  );
+};
+
+export default App;

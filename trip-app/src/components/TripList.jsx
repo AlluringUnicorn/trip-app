@@ -1,0 +1,36 @@
+import PropTypes from "prop-types";
+import css from "./TripList.module.css";
+
+const TripList = ({ trips, selectTrip }) => {
+  const formatDate = (dateString) => {
+    const [year, month, day] = dateString.split("-");
+    return `${day}.${month}.${year}`;
+  };
+
+  return (
+    <ul className={css.list}>
+      {trips.map((trip) => (
+        <li
+          key={trip.id}
+          onClick={() => selectTrip(trip)}
+          className={css.trip_item}
+        >
+          <img src={trip.image} alt="" width={245} height={245} />
+          <div>
+            <p>{trip.city}</p>
+            <p>
+              {formatDate(trip.startDate)} - {formatDate(trip.endDate)}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default TripList;
+
+TripList.propTypes = {
+  trips: PropTypes.array.isRequired,
+  selectTrip: PropTypes.func.isRequired,
+};

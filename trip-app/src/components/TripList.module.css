@@ -1,0 +1,9 @@
+.trip_item{
+    list-style: none;
+    margin-right: 80px;
+}
+
+.list{
+    display: flex;
+    padding: 0;
+}
