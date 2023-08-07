@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 
-.seleted {
+.selected {
   list-style: none;
   margin-right: 80px;
   border: 1px solid blue;
