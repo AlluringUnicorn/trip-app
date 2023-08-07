@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
-import css from "./TodayWeather.module.css";
+import css from "./css/TodaysWeather.module.css";
 import Countdown from "./Countdown";
 
 const formatDate = (timestamp) => {

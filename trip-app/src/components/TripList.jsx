@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "./TripList.module.css";
+import css from "./css/TripList.module.css";
 
 const TripList = ({ trips, selectTrip, selectedTrip }) => {
   const formatDate = (dateString) => {

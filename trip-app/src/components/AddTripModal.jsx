@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import css from "./TripModal.module.css";
+import css from "./css/AddTripModal.module.css";
 
-const TripModal = ({ addTrip }) => {
+const AddTripModal = ({ addTrip }) => {
   const [showModal, setShowModal] = useState(false);
   const [city, setCity] = useState("");
   const [startDate, setStartDate] = useState("");
@@ -82,8 +82,8 @@ const TripModal = ({ addTrip }) => {
   );
 };
 
-export default TripModal;
+export default AddTripModal;
 
-TripModal.propTypes = {
+AddTripModal.propTypes = {
   addTrip: PropTypes.func.isRequired,
 };

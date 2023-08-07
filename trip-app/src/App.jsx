@@ -1,8 +1,8 @@
 import { useState } from "react";
 import TripList from "./components/TripList";
-import TripDetails from "./components/TripDetails";
-import TripModal from "./components/TripModal";
-import TodayWeather from "./components/TodayWeather";
+import WeatherForWeek from "./components/WeatherForWeek";
+import AddTripModal from "./components/AddTripModal";
+import TodaysWeather from "./components/TodaysWeather";
 import css from "./App.module.css";
 
 const App = () => {
@@ -61,19 +61,19 @@ const App = () => {
         </div>
         <div className={css.trip_list}>
           <TripList trips={filteredTrips} selectTrip={selectTrip} selectedTrip={selectedTrip} />
-          <TripModal addTrip={addTrip} />
+          <AddTripModal addTrip={addTrip} />
         </div>
         <h2>Week</h2>
 
         {selectedTrip ? (
-          <TripDetails trip={selectedTrip} />
+          <WeatherForWeek trip={selectedTrip} />
         ) : (
           <p>Select a trip from the list to view weather details.</p>
         )}
       </div>
 
       <div className={css.todays_weather}>
-        <TodayWeather trip={selectedTrip} />
+        <TodaysWeather trip={selectedTrip} />
       </div>
     </div>
   );

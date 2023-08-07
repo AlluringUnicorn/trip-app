@@ -1,4 +1,4 @@
-import css from "./Countdown.module.css";
+import css from "./css/Countdown.module.css";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
-import css from "./TripDetails.module.css";
+import css from "./css/WeatherForWeek.module.css";
 
 const formatDate = (timestamp) => {
   const date = new Date(timestamp * 1000);
@@ -9,7 +9,7 @@ const formatDate = (timestamp) => {
   return dayOfWeek;
 };
 
-const TripDetails = ({ trip }) => {
+const WeatherForWeek = ({ trip }) => {
   const [weatherForWeek, setweatherForWeek] = useState(null);
 
   useEffect(() => {
@@ -55,8 +55,8 @@ const TripDetails = ({ trip }) => {
   );
 };
 
-export default TripDetails;
+export default WeatherForWeek;
 
-TripDetails.propTypes = {
+WeatherForWeek.propTypes = {
   trip: PropTypes.object,
 };
