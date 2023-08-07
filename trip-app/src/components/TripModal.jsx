@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+import css from "./TripModal.module.css";
 
 const TripModal = ({ addTrip }) => {
   const [showModal, setShowModal] = useState(false);
@@ -26,7 +28,7 @@ const TripModal = ({ addTrip }) => {
   };
 
   return (
-    <div className="trip-modal">
+    <div className={css.modal_wrapper}>
       {showModal && (
         <div className="modal">
           <h2>Add a New Trip</h2>
@@ -65,9 +67,23 @@ const TripModal = ({ addTrip }) => {
           </form>
         </div>
       )}
-      <button onClick={() => setShowModal(true)}>Add Trip</button>
+      <button className={css.add_btn} onClick={() => setShowModal(true)}>
+        <div>
+          <img
+            src="src/assets/plus.svg"
+            alt="weather-icon"
+            width="25"
+            height="25"
+          />
+        </div>
+        Add Trip
+      </button>
     </div>
   );
 };
 
 export default TripModal;
+
+TripModal.propTypes = {
+  addTrip: PropTypes.func.isRequired,
+};

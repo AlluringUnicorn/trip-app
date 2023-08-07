@@ -44,17 +44,23 @@ const App = () => {
   return (
     <div className={css.container}>
       <div className={css.main}>
-        <h1>Weather Forecast</h1>
-        <div className="search">
+        <h1>
+          <span className={css.h_span}> Weather</span> Forecast
+        </h1>
+        <div className={css.input_wrapper}>
           <input
+            className={css.input}
             type="text"
             placeholder="Search your trip"
             value={searchQuery}
             onChange={handleSearch}
           />
+          <div>
+            <img src="src/assets/search.svg" alt="" width={25} height={25} className={css.search_icon} />
+          </div>
         </div>
         <div className={css.trip_list}>
-          <TripList trips={filteredTrips} selectTrip={selectTrip} />
+          <TripList trips={filteredTrips} selectTrip={selectTrip} selectedTrip={selectedTrip} />
           <TripModal addTrip={addTrip} />
         </div>
         <h2>Week</h2>

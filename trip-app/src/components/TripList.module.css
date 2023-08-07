@@ -1,9 +1,27 @@
-.trip_item{
-    list-style: none;
-    margin-right: 80px;
+.trip_item {
+  list-style: none;
+  margin-right: 80px;
+  border: 1px solid #ededed;
+  cursor: pointer;
 }
 
-.list{
-    display: flex;
-    padding: 0;
+.seleted {
+  list-style: none;
+  margin-right: 80px;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.details {
+  padding: 10px;
+}
+
+.date {
+  color: #999999;
 }

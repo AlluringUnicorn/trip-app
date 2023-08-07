@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.weekday, .temp{
+  font-weight: 500;
+}
+
 .weekday,
 .temp,
 .city {
@@ -17,12 +21,10 @@
 
 .city {
   font-size: 50px;
-  font-weight: 300;
 }
 
 .degrees {
   font-size: 25px;
-  font-weight: 300;
   position: relative;
   bottom: 30px;
   right: 20px;

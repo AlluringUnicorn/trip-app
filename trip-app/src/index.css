@@ -21,4 +21,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
 }

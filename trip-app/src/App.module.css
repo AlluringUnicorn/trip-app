@@ -1,24 +1,51 @@
 .trip_list {
-    display: flex;
+  display: flex;
+  align-items: flex-start;
 }
 
-.container{
-    display:flex;
-    justify-content: space-between;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.todays_weather{
-    width: calc(100vw / 3);
-    height: 100vh;
-    background-image: url(src/assets/background1.png);
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.todays_weather {
+  width: calc(100vw / 3);
+  height: 100vh;
+  background-image: url(src/assets/background1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main{
-    padding-top: 50px;
-    padding-left: 50px;
+.main {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.h_span {
+  font-weight: 300;
+}
+
+.input_wrapper {
+  margin-bottom: 50px;
+}
+
+.input {
+  border: none;
+  border-radius: 8px;
+  background-color: #ededed;
+  padding: 25px 45px;
+  width: 250px;
+  font-size: 18px;
+  &::placeholder {
+    color: black;
+  }
+}
+
+.search_icon {
+  position: absolute;
+  top: 164px;
+  left: 60px;
 }
