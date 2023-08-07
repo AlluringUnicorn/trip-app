@@ -1,0 +1,25 @@
+.countdown {
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: calc(100vh / 4);
+}
+
+.span {
+    margin-right: 70px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.countdown_time {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.numbers{
+    font-weight: 500;
+    font-size: 40px;
+}

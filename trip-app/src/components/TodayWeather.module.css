@@ -1,0 +1,31 @@
+.weather_container {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+.degree_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weekday,
+.temp,
+.city {
+  margin: 0;
+}
+
+.city {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.degrees {
+  font-size: 25px;
+  font-weight: 300;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+}
+
+

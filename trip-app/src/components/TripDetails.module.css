@@ -1,0 +1,12 @@
+.item {
+  list-style: none;
+  margin-right: 70px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.weather_list {
+  display: flex;
+  padding: 0;
+}
