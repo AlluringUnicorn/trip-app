@@ -97,43 +97,47 @@
   },
   {
     "city": "Copenhagen",
-    "image": "https://example.com/copenhagen.jpg"
+    "image": "trip-app/src/assets/cities-images/copenhagen.jpeg"
   },
   {
     "city": "Oslo",
-    "image": "https://example.com/oslo.jpg"
+    "image": "trip-app/src/assets/cities-images/oslo.jpeg"
   },
   {
     "city": "Helsinki",
-    "image": "https://example.com/helsinki.jpg"
+    "image": "trip-app/src/assets/cities-images/helsinki.jpeg"
   },
   {
     "city": "Athens",
-    "image": "https://example.com/athens.jpg"
+    "image": "trip-app/src/assets/cities-images/athens.jpeg"
   },
   {
     "city": "Edinburgh",
-    "image": "https://example.com/edinburgh.jpg"
+    "image": "trip-app/src/assets/cities-images/edinburgh.webp"
   },
   {
     "city": "Istanbul",
-    "image": "https://example.com/istanbul.jpg"
+    "image": "trip-app/src/assets/cities-images/istanbul.jpeg"
   },
   {
     "city": "Kyiv",
-    "image": "https://example.com/kyiv.jpg"
+    "image": "trip-app/src/assets/cities-images/kyiv.jpeg"
+  },
+    {
+    "city": "Lviv",
+    "image": "trip-app/src/assets/cities-images/lviv.jpeg"
   },
   {
     "city": "Bucharest",
-    "image": "https://example.com/bucharest.jpg"
+    "image": "trip-app/src/assets/cities-images/bucharest.jpeg"
   },
   {
     "city": "Sofia",
-    "image": "https://example.com/sofia.jpg"
+    "image": "trip-app/src/assets/cities-images/sofia.jpeg"
   },
   {
     "city": "Zagreb",
-    "image": "https://example.com/zagreb.jpg"
+    "image": "trip-app/src/assets/cities-images/zagreb.jpeg"
   }
 ]
  

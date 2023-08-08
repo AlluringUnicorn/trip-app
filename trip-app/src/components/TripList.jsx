@@ -33,5 +33,5 @@ export default TripList;
 TripList.propTypes = {
   trips: PropTypes.array.isRequired,
   selectTrip: PropTypes.func.isRequired,
-  selectedTrip: PropTypes.string,
+  selectedTrip: PropTypes.object,
 };
