@@ -41,7 +41,7 @@ const WeatherForWeek = ({ trip }) => {
           <li key={day.datetimeEpoch} className={css.item}>
             <p>{formatDate(day.datetimeEpoch)}</p>
             <img
-              src={`public/images/weather-icons/${day.icon}.svg`}
+              src={`/images/weather-icons/${day.icon}.svg`}
               alt="weather-icon"
               width="50"
               height="50"
