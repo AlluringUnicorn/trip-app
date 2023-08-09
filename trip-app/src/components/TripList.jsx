@@ -21,7 +21,11 @@ const TripList = ({ trips, selectTrip, selectedTrip }) => {
         <li
           key={trip.id}
           onClick={() => selectTrip(trip)}
-          className={selectedTrip && selectedTrip.id === trip.id ? css.selected : css.trip_item}
+          className={
+            selectedTrip && selectedTrip.id === trip.id
+              ? css.selected
+              : css.trip_item
+          }
         >
           <img src={trip.image} alt="" width={270} height={250} />
           <div className={css.details}>
