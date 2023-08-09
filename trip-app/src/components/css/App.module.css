@@ -13,7 +13,7 @@
 .todays_weather {
   width: calc(100vw / 3);
   height: 100vh;
-  background-image: url(src/assets/background1.png);
+  background-image: url(public/images/background1.png);
   background-size: cover;
   background-position: center;
   display: flex;

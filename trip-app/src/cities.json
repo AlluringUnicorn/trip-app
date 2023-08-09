@@ -1,143 +1,143 @@
 [
   {
     "city": "Tokyo",
-    "image": "src/assets/cities-images/tokyo.jpeg"
+    "image": "public/cities-images/tokyo.jpeg"
   },
   {
     "city": "Delhi",
-    "image": "src/assets/cities-images/delhi.jpg"
+    "image": "public/cities-images/delhi.jpg"
   },
   {
     "city": "Shanghai",
-    "image": "src/assets/cities-images/Shanghai.webp"
+    "image": "public/cities-images/Shanghai.webp"
   },
   {
     "city": "São Paulo",
-    "image": "src/assets/cities-images/sao-paolo.jpeg"
+    "image": "public/cities-images/sao-paolo.jpeg"
   },
   {
     "city": "Mumbai",
-    "image": "src/assets/cities-images/mumbai.jpeg"
+    "image": "public/cities-images/mumbai.jpeg"
   },
   {
     "city": "London",
-    "image": "src/assets/cities-images/london.jpeg"
+    "image": "public/cities-images/london.jpeg"
   },
   {
     "city": "Berlin",
-    "image": "src/assets/cities-images/berlin.jpegg"
+    "image": "public/cities-images/berlin.jpegg"
   },
   {
     "city": "Paris",
-    "image": "src/assets/cities-images/paris.jpeg"
+    "image": "public/cities-images/paris.jpeg"
   },
   {
     "city": "Rome",
-    "image": "src/assets/cities-images/rome.webp"
+    "image": "public/cities-images/rome.webp"
   },
   {
     "city": "Madrid",
-    "image": "src/assets/cities-images/madrid.jpeg"
+    "image": "public/cities-images/madrid.jpeg"
   },
   {
     "city": "Barcelona",
-    "image": "src/assets/cities-images/Barcelona.jpg"
+    "image": "public/cities-images/Barcelona.jpg"
   },
   {
     "city": "Vienna",
-    "image": "src/assets/cities-images/vienna.jpeg"
+    "image": "public/cities-images/vienna.jpeg"
   },
   {
     "city": "Munich",
-    "image": "src/assets/cities-images/minuch.webp"
+    "image": "public/cities-images/minuch.webp"
   },
   {
     "city": "Hamburg",
-    "image": "src/assets/cities-images/hamburg.webp"
+    "image": "public/cities-images/hamburg.webp"
   },
   {
     "city": "Milan",
-    "image": "src/assets/cities-images/milano.jpeg"
+    "image": "public/cities-images/milano.jpeg"
   },
   {
     "city": "Amsterdam",
-    "image": "src/assets/cities-images/amsterdam.jpeg"
+    "image": "public/cities-images/amsterdam.jpeg"
   },
   {
     "city": "Brussels",
-    "image": "src/assets/cities-images/brussels.jpeg"
+    "image": "public/cities-images/brussels.jpeg"
   },
   {
     "city": "Stockholm",
-    "image": "src/assets/cities-images/Stockholm-1024x682.jpg"
+    "image": "public/cities-images/Stockholm-1024x682.jpg"
   },
   {
     "city": "Prague",
-    "image": "src/assets/cities-images/prague.jpeg"
+    "image": "public/cities-images/prague.jpeg"
   },
   {
     "city": "Lisbon",
-    "image": "src/assets/cities-images/lisbon.webp"
+    "image": "public/cities-images/lisbon.webp"
   },
   {
     "city": "Dublin",
-    "image": "src/assets/cities-images/dublin.webp"
+    "image": "public/cities-images/dublin.webp"
   },
   {
     "city": "Zurich",
-    "image": "src/assets/cities-images/zurich.jpeg"
+    "image": "public/cities-images/zurich.jpeg"
   },
   {
     "city": "Warsaw",
-    "image": "src/assets/cities-images/warsaw.jpeg"
+    "image": "public/cities-images/warsaw.jpeg"
   },
   {
     "city": "Budapest",
-    "image": "src/assets/cities-images/budapest.jpeg"
+    "image": "public/cities-images/budapest.jpeg"
   },
   {
     "city": "Copenhagen",
-    "image": "src/assets/cities-images/copenhagen.jpeg"
+    "image": "public/cities-images/copenhagen.jpeg"
   },
   {
     "city": "Oslo",
-    "image": "src/assets/cities-images/oslo.jpeg"
+    "image": "public/cities-images/oslo.jpeg"
   },
   {
     "city": "Helsinki",
-    "image": "src/assets/cities-images/helsinki.jpeg"
+    "image": "public/cities-images/helsinki.jpeg"
   },
   {
     "city": "Athens",
-    "image": "src/assets/cities-images/athens.jpeg"
+    "image": "public/cities-images/athens.jpeg"
   },
   {
     "city": "Edinburgh",
-    "image": "src/assets/cities-images/edinburgh.webp"
+    "image": "public/cities-images/edinburgh.webp"
   },
   {
     "city": "Istanbul",
-    "image": "src/assets/cities-images/istanbul.jpeg"
+    "image": "public/cities-images/istanbul.jpeg"
   },
   {
     "city": "Kyiv",
-    "image": "src/assets/cities-images/kyiv.jpeg"
+    "image": "public/cities-images/kyiv.jpeg"
   },
     {
     "city": "Lviv",
-    "image": "src/assets/cities-images/lviv.jpeg"
+    "image": "public/cities-images/lviv.jpeg"
   },
   {
     "city": "Bucharest",
-    "image": "src/assets/cities-images/bucharest.jpeg"
+    "image": "public/cities-images/bucharest.jpeg"
   },
   {
     "city": "Sofia",
-    "image": "src/assets/cities-images/sofia.jpeg"
+    "image": "public/cities-images/sofia.jpeg"
   },
   {
     "city": "Zagreb",
-    "image": "src/assets/cities-images/zagreb.jpeg"
+    "image": "public/cities-images/zagreb.jpeg"
   }
 ]
  

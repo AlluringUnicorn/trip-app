@@ -42,7 +42,7 @@ const TodayWeather = ({ trip }) => {
           </p>
           <div className={css.degree_wrapper}>
             <img
-              src={`src/assets/weather-icons/${weatherForToday.icon}.svg`}
+              src={`public/images/weather-icons/${weatherForToday.icon}.svg`}
               alt="weather-icon"
               width="80"
               height="80"
