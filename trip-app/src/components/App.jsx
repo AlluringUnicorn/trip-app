@@ -1,27 +1,14 @@
 import { useState } from "react";
-import TripList from "./components/TripList";
-import WeatherForWeek from "./components/WeatherForWeek";
-import AddTripModal from "./components/AddTripModal";
-import TodaysWeather from "./components/TodaysWeather";
-import css from "./App.module.css";
+import TripList from "./TripList";
+import WeatherForWeek from "./WeatherForWeek";
+import AddTripModal from "./AddTripModal";
+import TodaysWeather from "./TodaysWeather";
+import initialState from '../initialState';
+import css from "./css/App.module.css";
+
 
 const App = () => {
-  const [trips, setTrips] = useState([
-    {
-      id: 1,
-      city: "London",
-      image: "src/assets/cities-images/london.jpeg",
-      startDate: "2023-08-14",
-      endDate: "2023-08-21",
-    },
-    {
-      id: 2,
-      city: "Barcelona",
-      image: "src/assets/cities-images/Barcelona.jpg",
-      startDate: "2023-09-26",
-      endDate: "2023-09-30",
-    },
-  ]);
+  const [trips, setTrips] = useState(initialState);
   const [selectedTrip, setSelectedTrip] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -56,11 +43,21 @@ const App = () => {
             onChange={handleSearch}
           />
           <div>
-            <img src="src/assets/search.svg" alt="" width={25} height={25} className={css.search_icon} />
+            <img
+              src="src/assets/search.svg"
+              alt=""
+              width={25}
+              height={25}
+              className={css.search_icon}
+            />
           </div>
         </div>
         <div className={css.trip_list}>
-          <TripList trips={filteredTrips} selectTrip={selectTrip} selectedTrip={selectedTrip} />
+          <TripList
+            trips={filteredTrips}
+            selectTrip={selectTrip}
+            selectedTrip={selectedTrip}
+          />
           <AddTripModal addTrip={addTrip} />
         </div>
         <h2>Week</h2>

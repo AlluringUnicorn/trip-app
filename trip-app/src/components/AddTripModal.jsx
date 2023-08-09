@@ -94,7 +94,7 @@ const AddTripModal = ({ addTrip }) => {
             </div>
             <form className={css.form}>
               <div>
-                <label htmlFor="city">City</label>
+                <label htmlFor="city"> <span className={css.required} >*</span> City</label>
               </div>
               <select
                 id="city"
@@ -110,7 +110,7 @@ const AddTripModal = ({ addTrip }) => {
                 ))}
               </select>
               <div>
-                <label htmlFor="startDate">Start Date</label>
+                <label htmlFor="startDate"> <span className={css.required} >*</span> Start Date</label>
               </div>
               <input
                 type="date"
@@ -123,7 +123,7 @@ const AddTripModal = ({ addTrip }) => {
                 placeholder="Select date"
               />
               <div>
-                <label htmlFor="endDate">End Date</label>
+                <label htmlFor="endDate"> <span className={css.required} >*</span> End Date</label>
               </div>
               <input
                 type="date"
