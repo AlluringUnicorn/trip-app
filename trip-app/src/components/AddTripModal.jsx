@@ -8,10 +8,17 @@ const AddTripModal = ({ addTrip }) => {
   const [city, setCity] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [selectedCity, setSelectedCity] = useState("");
 
   const handleCityChange = (event) => {
-    setSelectedCity(event.target.value);
+    setCity(event.target.value);
+  };
+
+  const handleStartDateChange = (event) => {
+    setStartDate(event.target.value);
+  };
+
+  const handleEndDateChange = (event) => {
+    setEndDate(event.target.value);
   };
 
   const openModal = () => {
@@ -22,36 +29,48 @@ const AddTripModal = ({ addTrip }) => {
     setShowModal(false);
   };
 
-  const handleDone = () => {
-    // Validate inputs and create a new trip object
+  const handleSave = () => {
+    const selectedCity = options.filter((option) => option.city === city);
+    const image = selectedCity[0].image;
+
     const newTrip = {
-      id: Date.now(), // You can use a proper ID generator here
+      id: Date.now(),
       city,
+      image,
       startDate,
       endDate,
     };
 
-    // Call the addTrip function passed from the App component to add the new trip
     addTrip(newTrip);
 
-    // Reset the state and close the modal
     setCity("");
     setStartDate("");
     setEndDate("");
-    setShowModal(false);
+    closeModal();
   };
 
-const calculateMinEndDate = () => {
-  const currentDate = new Date(startDate);
-  currentDate.setDate(currentDate.getDate() + 1);
-  return currentDate.toISOString().split("T")[0];
-};
+  const handleCancel = () => {
+    setCity("");
+    setStartDate("");
+    setEndDate("");
+    closeModal();
+  };
 
-const calculateMaxEndDate = () => {
-  const currentDate = new Date(startDate);
-  currentDate.setDate(currentDate.getDate() + 15);
-  return currentDate.toISOString().split("T")[0];
-};
+  const minStartDate = new Date().toISOString().split("T")[0];
+  const maxStartDate = new Date(new Date().getTime() + 15 * 24 * 60 * 60 * 1000)
+    .toISOString()
+    .split("T")[0];
+
+  const minEndDate = startDate
+    ? new Date(new Date(startDate).getTime() + 24 * 60 * 60 * 1000)
+        .toISOString()
+        .split("T")[0]
+    : "";
+  const maxEndDate = startDate
+    ? new Date(new Date(startDate).getTime() + 15 * 24 * 60 * 60 * 1000)
+        .toISOString()
+        .split("T")[0]
+    : "";
 
   return (
     <div className={css.modal_wrapper}>
@@ -79,7 +98,7 @@ const calculateMaxEndDate = () => {
               </div>
               <select
                 id="city"
-                value={selectedCity}
+                value={city}
                 onChange={handleCityChange}
                 className={css.select}
               >
@@ -97,13 +116,9 @@ const calculateMaxEndDate = () => {
                 type="date"
                 id="startDate"
                 value={startDate}
-                min={new Date().toISOString().split("T")[0]}
-                max={
-                  new Date(new Date().getTime() + 15 * 24 * 60 * 60 * 1000)
-                    .toISOString()
-                    .split("T")[0]
-                }
-                onChange={(e) => setStartDate(e.target.value)}
+                min={minStartDate}
+                max={maxStartDate}
+                onChange={handleStartDateChange}
                 className={css.input}
                 placeholder="Select date"
               />
@@ -114,12 +129,9 @@ const calculateMaxEndDate = () => {
                 type="date"
                 id="endDate"
                 value={endDate}
-                min={calculateMinEndDate()}
-                max={calculateMaxEndDate()}
-                onChange={(e) => {
-                  setEndDate(e.target.value);
-                  console.log(endDate);
-                }}
+                min={minEndDate}
+                max={maxEndDate}
+                onChange={handleEndDateChange}
                 className={css.input}
                 placeholder="Select date"
               />
@@ -127,14 +139,14 @@ const calculateMaxEndDate = () => {
             <div className={css.footer}>
               <button
                 type="button"
-                onClick={closeModal}
+                onClick={handleCancel}
                 className={css.cancel_btn}
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                onClick={handleDone}
+                onClick={handleSave}
                 className={css.save_btn}
               >
                 Save

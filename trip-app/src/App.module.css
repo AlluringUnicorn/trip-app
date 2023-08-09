@@ -1,6 +1,8 @@
 .trip_list {
   display: flex;
   align-items: flex-start;
+  width: 1100px;
+  overflow-x: auto;
 }
 
 .container {
