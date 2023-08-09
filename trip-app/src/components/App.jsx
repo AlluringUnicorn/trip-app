@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TripList from "./TripList";
 import WeatherForWeek from "./WeatherForWeek";
 import AddTripModal from "./AddTripModal";
 import TodaysWeather from "./TodaysWeather";
-import initialState from '../initialState';
+import initialState from "../initialState";
 import css from "./css/App.module.css";
 
-
 const App = () => {
-  const [trips, setTrips] = useState(initialState);
+  const initialTrips =
+    JSON.parse(localStorage.getItem("trips")) || initialState;
+  
+  const [trips, setTrips] = useState(initialTrips);
+
+  useEffect(() => {
+    localStorage.setItem("trips", JSON.stringify(trips));
+  }, [trips]);
+
   const [selectedTrip, setSelectedTrip] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
