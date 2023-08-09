@@ -44,7 +44,7 @@ const App = () => {
           />
           <div>
             <img
-              src="trip-app/public/search.svg"
+              src="/search.svg"
               alt=""
               width={25}
               height={25}
