@@ -85,7 +85,7 @@ const AddTripModal = ({ addTrip }) => {
                 className={css.close_btn}
               >
                 <img
-                  src="public/images/close.svg"
+                  src="public/close.svg"
                   alt="close-button"
                   width="20"
                   height="20"
@@ -158,7 +158,7 @@ const AddTripModal = ({ addTrip }) => {
       <button className={css.add_btn} onClick={openModal}>
         <div>
           <img
-            src="public/images/plus.svg"
+            src="public/plus.svg"
             alt="weather-icon"
             width="25"
             height="25"
