@@ -10,8 +10,8 @@
     id: 2,
     city: "Barcelona",
     image: "/cities-images/Barcelona.jpg",
-    startDate: "2023-09-26",
-    endDate: "2023-09-30",
+    startDate: "2023-08-26",
+    endDate: "2023-08-30",
   },
  ];
 

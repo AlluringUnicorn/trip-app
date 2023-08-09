@@ -7,9 +7,17 @@ const TripList = ({ trips, selectTrip, selectedTrip }) => {
     return `${day}.${month}.${year}`;
   };
 
+  const compareByStartDate = (a, b) => {
+    const startDateA = new Date(a.startDate);
+    const startDateB = new Date(b.startDate);
+    return startDateA - startDateB;
+  };
+
+  const sortedTrips = trips.slice().sort(compareByStartDate);
+
   return (
     <ul className={css.list}>
-      {trips.map((trip) => (
+      {sortedTrips.map((trip) => (
         <li
           key={trip.id}
           onClick={() => selectTrip(trip)}
